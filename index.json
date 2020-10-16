@@ -1,1 +1,24 @@
-{ "hello": "world" }
+{
+  "type": "https://w3c-ccg.github.io/vc-json-schemas/schema/1.0/schema.json",
+  "modelVersion": "1.0",
+  "id": "did:work:MDP8AsFhHzhwUvGNuYkX7T;id=06e126d1-fa44-4882-a243-1e326fbe21db;version=1.1",
+  "name": "EmailCredentialSchema",
+  "author": "did:work:abc123",
+  "authored": "2018-01-01T00:00:00+00:00",
+  "schema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Email",
+    "type": "object",
+    "properties": {
+     "emailAddress": {
+       "type": "string",
+       "format": "email"
+     },
+     "verified": {
+       "type": "boolean"
+     }
+    },
+    "required": ["emailAddress", "verified"],
+    "additionalProperties": false
+  }
+ }
